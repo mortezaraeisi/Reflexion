@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A625A3B2-A68C-4D87-8E6D-2B6C8000B00D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>REFLEXION_LIB</RootNamespace>
+    <AssemblyName>REFLEXION_LIB</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DEFINATION\DELEGATES\Args\BallLocChangedEventArgs.cs" />
+    <Compile Include="DEFINATION\DELEGATES\Args\StateChangedArgs.cs" />
+    <Compile Include="DEFINATION\DELEGATES\Delegates.cs" />
+    <Compile Include="DEFINATION\DELEGATES\Args\GameStateChangedEventArgs.cs" />
+    <Compile Include="DEFINATION\DELEGATES\Args\MessagingEventArgs.cs" />
+    <Compile Include="DEFINATION\DELEGATES\Args\PageChangedEventArgs.cs" />
+    <Compile Include="DEFINATION\DELEGATES\Args\PaintedEventArgs.cs" />
+    <Compile Include="DEFINATION\ENUMS\Direction.cs" />
+    <Compile Include="DEFINATION\ATTRIBUTES\ExplanationAttribute.cs" />
+    <Compile Include="DEFINATION\ExtensionMethods.cs" />
+    <Compile Include="DEFINATION\ENUMS\GameStates.cs" />
+    <Compile Include="DEFINATION\ENUMS\Borders.cs" />
+    <Compile Include="DEFINATION\ATTRIBUTES\ProgrammableAttribute.cs" />
+    <Compile Include="MGMT\Game.cs" />
+    <Compile Include="MGMT\Policy.cs" />
+    <Compile Include="MGMT\Page.cs" />
+    <Compile Include="Object\Ball.cs" />
+    <Compile Include="Object\BaseObject.cs" />
+    <Compile Include="Object\Tools\Buttons\Button.cs" />
+    <Compile Include="Object\Tools\Buttons\EndPoint.cs" />
+    <Compile Include="Object\Tools\Buttons\HelpSign.cs" />
+    <Compile Include="Object\Tools\Buttons\PageChanger.cs" />
+    <Compile Include="Object\Tools\Buttons\StartPoint.cs" />
+    <Compile Include="Object\Tools\Foods\Food.cs" />
+    <Compile Include="Object\Tools\Foods\MagicFood.cs" />
+    <Compile Include="Object\Tools\GameTool.cs" />
+    <Compile Include="Object\Tools\Hobble.cs" />
+    <Compile Include="Object\Tools\Stones\Destroyer.cs" />
+    <Compile Include="Object\Tools\Stones\Moveable.cs" />
+    <Compile Include="Object\Tools\Stones\Stone.cs" />
+    <Compile Include="Programming\CodeLine.cs" />
+    <Compile Include="Programming\ProgramBlock.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
